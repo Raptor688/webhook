@@ -16,10 +16,14 @@
 
       request.setRequestHeader('Content-type', 'application/json');
 
-      var params = {
+      var params = 
+      {
         username: "Momentum Capital",
-        avatar_url: "",
-        content: "Test"
+        "embeds": [
+        {
+        "title": "Test!",
+        "color": 1127128
+        },
       }
 
       request.send(JSON.stringify(params));
